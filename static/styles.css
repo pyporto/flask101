@@ -1,0 +1,27 @@
+body {
+  /* picture source: https://www.pexels.com/photo/abandoned-forest-industry-nature-34950/ */
+  background: url(/static/background.jpg);
+  background-size: cover;
+}
+
+div.splash {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    height: 400px;
+    width: 600px;
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin-top:-200px;
+    margin-left: -300px;
+    display: table;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+div.splash > span {
+  display: table-cell;
+  vertical-align: middle;
+  font: 30px/45px Arial, sans-serif;
+  color: white;
+}

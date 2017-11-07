@@ -1,0 +1,37 @@
+Website with quotes of wisdom
+=============================
+
+Task
+----
+
+Create a web server which would return a random quote
+when user goes to "http://127.0.0.1:5000/" and
+return a given quote by id when user goes to
+"http://127.0.0.1:5000/N", where N is numeric quote id.
+
+
+Steps
+-----
+
+1. Create a module quotes.py
+2. Inside the module create a function "get_random(filename)"
+   which return a properly formatted random quote from CSV file
+3. Create another function "get_by_id(filename, id)" which return
+   a properly formatted random quote from CSV file and quote id
+4. Modify flask05.py so that it could import these modules
+   and show the appropriate content
+
+Extra
+-----
+
+1. Add caching to quotes.py to ensure it reads the file only once
+2. Add handler for URL "http://127.0.0.1:5000/top/N" to show first
+   N quotes in a row
+
+Documentation
+--------------
+
+- Module csv https://docs.python.org/3.6/library/csv.html
+- Module random https://docs.python.org/3.6/library/random.html
+- Flask https://flask.pocoo.org/docs/
+- Jinja templates https://jinja.pocoo.org/docs/
